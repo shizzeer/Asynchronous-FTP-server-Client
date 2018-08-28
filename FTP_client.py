@@ -15,7 +15,6 @@ class FtpConnection:
 		self.data_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 	async def connect(self):
-		print('wywolano')
 		await self.loop.sock_connect(self.control_sock, (self.FTP_HOST, self.FTP_CONTROL_PORT))
 		await self.loop.sock_connect(self.data_sock, (self.FTP_HOST, self.FTP_DATA_PORT))
 		self.successful_connect_msg = await self.loop.sock_recv(self.control_sock, 10000)
