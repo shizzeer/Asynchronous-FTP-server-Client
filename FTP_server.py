@@ -49,7 +49,7 @@ class ftpAuthenticationHandler:
         self.logged_in = True
         self.welcome_msg = b'230-\n'\
                            b'230- -------------------------------------------------------------------------\n'\
-	                   b'230- WELCOME!	This server is created by Kamil Szpakowski. You are logged in\n'\
+	                    b'230- WELCOME!	This server is created by Kamil Szpakowski. You are logged in\n'\
                            b'230-            as anonymous.\n'\
                            b'230- -------------------------------------------------------------------------\n'\
                            b'Remote system type is UNIX.'
