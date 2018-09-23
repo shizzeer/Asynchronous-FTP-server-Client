@@ -235,7 +235,7 @@ class FtpCommandsHandler:
 
     def recv_file_error_handler(self, exception, path):
         handler = {
-		              'IsADirectoryError': b'remote: ' + path.encode() + b': Is a directory.\n',
+                      'IsADirectoryError': b'remote: ' + path.encode() + b': Is a directory.\n',
                       'PermissionError': b'remote: ' + path.encode() + b': Permission denied.\n',
                       'FileNotFoundError': b'remote: 550 ' + path.encode() + b': No such file or directory.\n'
                   }
